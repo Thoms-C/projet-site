@@ -1,0 +1,122 @@
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px; 
+}
+/*////DIMENSION DU BANDEAU////*/
+.carambar{
+    background-image: url(images/fondJoke.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jokeLoic{
+    font-size: 8vw;
+    text-align: center;  
+}
+
+/*//PHOTO DES BODIES//*/
+.bodie{
+    height: 50px;
+    width: 45px;
+    padding-left: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*mise en page  titre des blagues*/
+.H3{
+    font-size: 30px;
+    display: flex; 
+    flex-direction: column;    
+}
+.H3 li{
+    margin: 80px 0px;
+}
+
+/*mise en page des sections de blagues*/
+div li{
+    padding-bottom: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+/* fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus*/
+.survol{
+    display: none;
+    width: 350px;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 0px;
+}
+.pop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blague{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+  
+}
+/*fait apparaitre les images*/
+.blague div{
+    height: 200px;
+    width: 200px;   
+}
+/* dimensionne les images dave, data et perdue*/
+.dave{
+    
+    background-image: url(images/dave.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    color: white;
+    margin: 20px;
+    
+}
+
+.data{
+    background-image: url(images/data.jpg);
+    background-size: cover;
+    background-position: center; 
+    border-radius:50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
+    margin: 20px;   
+}
+.perdu{
+    color: white;
+    background-image: url(images/perdu.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    margin: 20px;
+
+}
+
+/*//////RESPONSIVE/////*/
+@media screen and (max-width:800px){
+    .blague{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .blague div{
+        height: 200px;
+        width: 200px;
+        margin: 25px 25px;
+    }
+}
+
